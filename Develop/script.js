@@ -20,6 +20,34 @@ $('.container').append('<div id="hour17" class="row time-block past present futu
 
 // WHEN I view the time blocks for that day
 // THEN each time block is color - coded to indicate whether it is in the * past, present, or future
+const trackTime = () => {
+
+  let currentTime = moment().hour();
+
+  $('.time-block').each(function () {
+
+    let block = parseInt($(this).attr('id').split('hour')[1]);
+    console.log(block, currentTime);
+
+    if (block === currentTime) {
+      $(this).removeClass('past');
+      $(this).addClass('present');
+      $(this).removeClass('future');
+
+    } else if (block < currentTime) {
+      $(this).addClass('past');
+      $(this).removeClass('present');
+      $(this).removeClass('future');
+
+    } else {
+      $(this).removeClass('past');
+      $(this).removeClass('present');
+      $(this).addClass('future');
+    }
+  })
+}
+
+trackTime();
 
 
 // WHEN I click into a time block
