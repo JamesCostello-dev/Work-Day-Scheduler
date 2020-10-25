@@ -55,21 +55,18 @@ const trackTime = () => {
 trackTime();
 
 // WHEN I click the save button for that time block THEN the text for that event is saved in local storage
-// create variables for each line
-// create object and loop through to check value
 
 $('.saveBtn').on('click', function () {
 
-
-  var textArea1 = $("textarea")[0].value;
-  var textArea2 = $("textarea")[1].value;
-  var textArea3 = $("textarea")[2].value;
-  var textArea4 = $("textarea")[3].value;
-  var textArea5 = $("textarea")[4].value;
-  var textArea6 = $("textarea")[5].value;
-  var textArea7 = $("textarea")[6].value;
-  var textArea8 = $("textarea")[7].value;
-  var textArea9 = $("textarea")[8].value;
+  let textArea1 = $("textarea")[0].value;
+  let textArea2 = $("textarea")[1].value;
+  let textArea3 = $("textarea")[2].value;
+  let textArea4 = $("textarea")[3].value;
+  let textArea5 = $("textarea")[4].value;
+  let textArea6 = $("textarea")[5].value;
+  let textArea7 = $("textarea")[6].value;
+  let textArea8 = $("textarea")[7].value;
+  let textArea9 = $("textarea")[8].value;
 
   localStorage.setItem("textarea1", textArea1);
   localStorage.setItem("textarea2", textArea2);
