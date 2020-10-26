@@ -55,7 +55,6 @@ const trackTime = () => {
 trackTime();
 
 // WHEN I click the save button for that time block THEN the text for that event is saved in local storage
-
 $('.saveBtn').on('click', function () {
 
   let textArea09 = $("textarea")[0].value;
