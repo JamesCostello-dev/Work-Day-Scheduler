@@ -27,7 +27,7 @@ const container = () => {
 container();
 
 
-// WHEN I view the time blocks for that day THEN each time block is color - coded to indicate whether it is in the * past, present, or future
+// WHEN I view the time blocks for that day THEN each time block is color - coded to indicate whether it is in the past, present, or future
 const trackTime = () => {
 
   let currentTime = moment().hour();
