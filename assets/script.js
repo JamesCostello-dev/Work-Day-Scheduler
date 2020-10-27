@@ -1,3 +1,5 @@
+'use strict';
+
 // GIVEN I am using a daily planner to create a schedule WHEN I open the planner THEN the current day is displayed at the top of the calendar
 
 $('#currentDay').text(moment().format('dddd, MMMM Do'));
@@ -57,40 +59,30 @@ trackTime();
 // WHEN I click the save button for that time block THEN the text for that event is saved in local storage
 $('.saveBtn').on('click', function () {
 
-  let textArea09 = $("textarea")[0].value;
-  let textArea10 = $("textarea")[1].value;
-  let textArea11 = $("textarea")[2].value;
-  let textArea12 = $("textarea")[3].value;
-  let textArea13 = $("textarea")[4].value;
-  let textArea14 = $("textarea")[5].value;
-  let textArea15 = $("textarea")[6].value;
-  let textArea16 = $("textarea")[7].value;
-  let textArea17 = $("textarea")[8].value;
-
-  localStorage.setItem("textArea09", textArea09);
-  localStorage.setItem("textArea10", textArea10);
-  localStorage.setItem("textArea11", textArea11);
-  localStorage.setItem("textArea12", textArea12);
-  localStorage.setItem("textArea13", textArea13);
-  localStorage.setItem("textArea14", textArea14);
-  localStorage.setItem("textArea15", textArea15);
-  localStorage.setItem("textArea16", textArea16);
-  localStorage.setItem("textArea17", textArea17);
+  localStorage.setItem("key09", $("textarea")[0].value);
+  localStorage.setItem("key10", $("textarea")[1].value);
+  localStorage.setItem("key11", $("textarea")[2].value);
+  localStorage.setItem("key12", $("textarea")[3].value);
+  localStorage.setItem("key13", $("textarea")[4].value);
+  localStorage.setItem("key14", $("textarea")[5].value);
+  localStorage.setItem("key15", $("textarea")[6].value);
+  localStorage.setItem("key16", $("textarea")[7].value);
+  localStorage.setItem("key17", $("textarea")[8].value);
 
 })
 
 
 // WHEN I refresh the page THEN the saved events persist
-$(window).on('load', function () {
+$(document).ready(function () {
 
-  $("textarea")[0].value = localStorage.getItem("textArea09");
-  $("textarea")[1].value = localStorage.getItem("textArea10");
-  $("textarea")[2].value = localStorage.getItem("textArea11");
-  $("textarea")[3].value = localStorage.getItem("textArea12");
-  $("textarea")[4].value = localStorage.getItem("textArea13");
-  $("textarea")[5].value = localStorage.getItem("textArea14");
-  $("textarea")[6].value = localStorage.getItem("textArea15");
-  $("textarea")[7].value = localStorage.getItem("textArea16");
-  $("textarea")[8].value = localStorage.getItem("textArea17");
+  $("textarea")[0].value = localStorage.getItem("key09");
+  $("textarea")[1].value = localStorage.getItem("key10");
+  $("textarea")[2].value = localStorage.getItem("key11");
+  $("textarea")[3].value = localStorage.getItem("key12");
+  $("textarea")[4].value = localStorage.getItem("key13");
+  $("textarea")[5].value = localStorage.getItem("key14");
+  $("textarea")[6].value = localStorage.getItem("key15");
+  $("textarea")[7].value = localStorage.getItem("key16");
+  $("textarea")[8].value = localStorage.getItem("key17");
 
 })
