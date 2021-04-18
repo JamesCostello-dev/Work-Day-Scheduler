@@ -37,7 +37,7 @@ Calendar application that allows a user to save events for each hour of the day.
 
 ## Deployed Application
 
-[View Work Day Scheduler](https://jamescostello-dev.github.io/work-day-scheduler/)
+[View Work Day Scheduler](https://jamescostello-dev.github.io/Work-Day-Scheduler/)
 
 ## Img
 
