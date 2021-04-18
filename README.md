@@ -12,6 +12,7 @@ Calendar application that allows a user to save events for each hour of the day.
 - [License](#license)
 
 ## Tech
+
 * HTML
 * CSS
 * JQuery / Javascript
@@ -30,19 +31,23 @@ Calendar application that allows a user to save events for each hour of the day.
  
  `brave index.html`
  
- or
+ Or:
  
- `google-chrome index.html`
- 
- or 
- 
- `firefox index.html`
+ Go to file location of cloned repo, right click index.html and open with your prefered browser. 
 
-## Website
-https://jamescostello-dev.github.io/work-day-scheduler/
+## Deployed Application
+
+[View Work Day Scheduler](https://jamescostello-dev.github.io/work-day-scheduler/)
 
 ## Img
+
 ![Screen Shot 2020-10-25 at 8 01 28 PM](https://user-images.githubusercontent.com/28774706/97129751-eab17480-16fc-11eb-9af0-dc05fe81b39f.png)
 
-## Contribution 
-James Costello
+## Contributions
+
+Made by: JamesCostello-dev
+
+
+## License
+
+This application is unlicensed.
