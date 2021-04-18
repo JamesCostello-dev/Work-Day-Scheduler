@@ -26,7 +26,17 @@ Calendar application that allows a user to save events for each hour of the day.
 
 `type '<your-browers-name-here> index.html' in terminal` 
 
- Example: `brave index.html`
+ Example: 
+ 
+ `brave index.html`
+ 
+ or
+ 
+ `google-chrome index.html`
+ 
+ or 
+ 
+ `firefox index.html`
 
 ## Website
 https://jamescostello-dev.github.io/work-day-scheduler/
