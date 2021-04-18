@@ -1,12 +1,30 @@
 # Work Day Scheduler
 
-## Purpose
+## Description
 Calendar application that allows a user to save events for each hour of the day. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-## Built With
-* JQuery / Javascript
+## Table of Contents:
+
+- [Description](#description)
+- [Tech](#tech)
+- [Install](#install)
+- [Deployed Application](#deployed-application)
+- [License](#license)
+
+## Tech
 * HTML
 * CSS
+* JQuery / Javascript
+
+## Install
+
+`open terminal`
+
+`git clone git@github.com:JamesCostello-dev/Work-Day-Scheduler.git`
+
+`cd Work-Day-Scheduler`
+
+`type '<your-browers-name-here> index.html' in terminal` Example: `brave index.html`
 
 ## Website
 https://jamescostello-dev.github.io/work-day-scheduler/
